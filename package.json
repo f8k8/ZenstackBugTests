@@ -1,0 +1,31 @@
+{
+  "name": "zenstack-bug-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "src/index.ts",
+  "scripts": {
+    "build": "zenstack generate && dotenv -e .env.test -- prisma db push --accept-data-loss && pal g && tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@apollo/server": "^4.9.3",
+    "@graphql-tools/schema": "^10.0.0",
+    "@paljs/cli": "^6.0.7",
+    "@paljs/plugins": "^6.0.7",
+    "@paljs/schema": "^6.0.7",
+    "@prisma/client": "^5.3.1",
+    "@types/cookie": "^0.5.2",
+    "@types/node": "^20.7.0",
+    "@zenstackhq/runtime": "^1.0.0-beta.24",
+    "body-parser": "^1.20.2",
+    "dotenv-cli": "^7.3.0",
+    "express": "^4.18.2",
+    "graphql": "^16.8.1",
+    "graphql-middleware": "^6.1.35",
+    "graphql-tag": "^2.12.6",
+    "prisma": "^5.3.1",
+    "typescript": "^5.2.2",
+    "zenstack": "^1.0.0-beta.24"
+  }
+}
